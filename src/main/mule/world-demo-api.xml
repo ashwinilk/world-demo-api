@@ -25,4 +25,5 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		</ee:cache>
 		<logger level="INFO" doc:name="Logger" doc:id="e5628075-760d-4ce7-adc1-d1daaff6f5c3" message="#[payload]"/>
 	</flow>
+	
 </mule>
