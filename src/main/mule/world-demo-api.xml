@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:request-connection host="worldtimeapi.org" />
 	</http:request-config>
 	<flow name="world-demo-apiFlow" doc:id="a1809771-f10a-4a96-8b34-73757b700366" >
-		<http:listener doc:name="Listener" doc:id="bbcb8e81-071c-4a46-9bd3-90e1139c4a27" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
+		<http:listener doc:name="End point Listener" doc:id="bbcb8e81-071c-4a46-9bd3-90e1139c4a27" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
 		<ee:cache doc:name="Cache" doc:id="1f263ff3-f071-48ea-af6d-de5ea32b51c0" >
 			<http:request method="GET" doc:name="Request for world api" doc:id="85241218-5a7b-4595-bfaa-ef857c5c2b7d" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params><![CDATA[#[output application/java
